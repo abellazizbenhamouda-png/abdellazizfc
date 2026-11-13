@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Abdellaziz Ben Hamouda">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Votre avis</title>
+</head>
+<body class="real">
+  <header class="site-header"><h1>Votre avis</h1>
+    <nav class="site-nav" aria-label="Navigation principale">
+    <a href="index.html">Accueil</a><a href="real-madrid.html">Real Madrid</a><a href="fc-barcelone.html">FC Barcelone</a><a href="bayern-munich.html">Bayern Munich</a><a href="liverpool.html">Liverpool FC</a><a href="manchester-city.html">Manchester City</a><a href="avis.html" aria-current="page">Votre avis</a>
+    </nav>
+  </header>
+  <main>
+    <section class="panel">
+      <h2>Formulaire de retour</h2>
+      <p>Les champs marqués comme obligatoires doivent être remplis. L’envoi ouvre votre logiciel de messagerie.</p>
+      <form class="feedback-form">
+      <fieldset>
+        <legend><h3>Identité</h3></legend>
+        <table>
+          <tr>
+            <td><label>Nom :</label></td>
+            <td><input name="nom" type="text" required></td>
+          </tr>
+          <tr>
+            <td><label>Prénom :</label></td>
+            <td><input name="prénom" type="text" required></td>
+          </tr>
+          <tr>
+            <td><label>Date de naissance :</label></td>
+            <td ><label><input class="datenaiss" type="date"></label></td>
+          </tr>
+          <tr>
+            <td><label>Genre</label></td>
+            <td><div class="radio-row">
+              <label>Homme</label><input name="option" type="radio">
+              <label>Femme</label><input name="option" type="radio">
+            </div></td>
+          </tr>          
+        </table>
+      </fieldset>
+      <fieldset>
+        <legend><h3>Coordonnées</h3></legend>
+        <table>
+          <tr>
+            <td><label>Pays :</label></td>
+            <td>
+              <select name="pays" required>
+                <option>Choisir...</option>
+                <option>Tunisie</option>
+                <option>Algérie</option>
+                <option>Maorc</option>
+                <option>France</option>
+                <option>Allemagne</option>
+                <option>Espagne</option>
+                <option>Portugal</option>
+                <option>Italie</option>
+                <option>USA</option>
+                <option>Autre</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label>Numéro de Téléphone :</label></td>
+            <td><input name="tel" type="number" min="10000000" max="99999999"></td>
+          </tr>
+          <tr>
+            <td><label>E-mail :</label></td>
+            <td><input name="email" type="email" required></td>
+          </tr>
+        </table>
+      </fieldset>
+      <fieldset>
+        <legend><h3>Avis</h3></legend>
+        <table>
+          <tr>
+            <td><label>Équipe préférée</label></td>
+            <td>
+              <select required>
+              <option value="">Choisir une équipe…</option><option>Real Madrid</option><option>FC Barcelone</option><option>Bayern Munich</option><option>Liverpool FC</option><option>Manchester City</option><option>Autre</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label>Évaluez-nous</label></td>
+            <td>
+            <div class="rating">
+              <input type="radio" id="star5" name="note" value="5">
+              <label for="star5">★</label>
+
+              <input type="radio" id="star4" name="note" value="4">
+              <label for="star4">★</label>
+
+              <input type="radio" id="star3" name="note" value="3">
+              <label for="star3">★</label>
+
+              <input type="radio" id="star2" name="note" value="2">
+              <label for="star2">★</label>
+
+              <input type="radio" id="star1" name="note" value="1">
+              <label for="star1">★</label>
+            </div>
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+      <fieldset>
+        <legend><h3>Commentaires</h3></legend>
+        <textarea name="commentaires" rows="10" cols="80"></textarea>
+      </fieldset>
+      <br>
+      <div class="form-buttons"><button type="submit">Envoyer</button><button type="reset">Réinitialiser</button></div>
+    </form>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <p><i>Tous droits réservés - Abdellaziz Ben Hamouda</i><br>Contact :
+      <a href="tel:+21628470565">+216 28470565</a> |
+      <a href="mailto:abellazizbenhamouda@gmail.com">abellazizbenhamouda@gmail.com</a>
+    </p>
+  </footer>
+</body>
+</html>

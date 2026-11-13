@@ -1,0 +1,387 @@
+* 
+{
+  box-sizing: border-box;
+}
+
+body 
+{
+  --club: #173d79;
+  --club-light: #e8eef8;
+  margin: 0;
+  color: #20242b;
+  background: var(--club-light);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+body.real 
+{
+  --club: #17488a;
+  --club-light: #fff;
+}
+
+body.barca 
+{
+  --club: #a50044;
+  --club-light: #f4e8ee;
+}
+
+body.bayern,
+body.liverpool 
+{
+  --club: #c8102e;
+  --club-light: #f7e9ec;
+}
+
+body.city 
+{
+  --club: #6cabdd;
+  --club-light: #e9f4fb;
+}
+
+a 
+{
+  color: var(--club);
+}
+
+a:hover 
+{
+  text-decoration-thickness: 2px;
+}
+
+.site-header 
+{
+  padding: 1.3rem max(1rem, calc((100% - 1100px) / 2));
+  color: #fff;
+  background: var(--club);
+}
+
+.site-header h1 
+{
+  margin: 0 0 .75rem;
+  font-family: "Times New Roman", Times, serif;
+  font-size: clamp(1.7rem, 4vw, 2.5rem);
+}
+
+.site-nav 
+{
+  display: flex;
+  flex-wrap: wrap;
+  gap: .45rem;
+}
+
+.site-nav a 
+{
+  padding: .35rem .65rem;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, .55);
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.site-nav a:hover,
+.site-nav a[aria-current="page"] 
+{
+  color: var(--club);
+  background: #fff;
+}
+
+main 
+{
+  width: min(1100px, calc(100% - 2rem));
+  margin: 2rem auto;
+}
+
+.intro,
+.panel,
+.team-card 
+{
+  padding: 1.25rem;
+  background: #fff;
+  border: 1px solid #d6dbe2;
+  border-radius: 8px;
+  box-shadow: 0 3px 12px rgba(20, 30, 45, .06);
+}
+
+.intro h2,
+.panel h2,
+.team-card h2 
+{
+  margin-top: 0;
+  color: var(--club);
+  font-family: "Times New Roman", Times, serif;
+}
+
+.team-grid 
+{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.team-card 
+{
+  border-top: 5px solid var(--club);
+}
+
+.team-card p 
+{
+  margin-bottom: 0;
+}
+
+.team-card a 
+{
+  font-weight: bold;
+}
+
+.team-hero 
+{
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(210px, .65fr);
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.team-hero h2 
+{
+  margin: 0;
+  color: var(--club);
+  font: bold clamp(1.7rem, 4vw, 2.5rem) "Times New Roman", Times, serif;
+}
+
+.team-hero img 
+{
+  display: block;
+  width: min(100%, 220px);
+  height: 190px;
+  margin: auto;
+  object-fit: contain;
+}
+
+.panel 
+{
+  margin: 1rem 0;
+}
+
+.panel h2 
+{
+  margin-bottom: .6rem;
+}
+
+.image-link 
+{
+  display: block;
+  max-width: 700px;
+  margin: 1rem auto .5rem;
+}
+
+.stadium-image 
+{
+  display: block;
+  width: 100%;
+  max-height: 350px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.caption 
+{
+  margin: .25rem auto 0;
+  text-align: center;
+  font-size: .9rem;
+}
+
+.table-wrap 
+{
+  overflow-x: auto;
+}
+
+table 
+{
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+caption 
+{
+  padding: .5rem;
+  color: var(--club);
+  font-weight: bold;
+  text-align: left;
+}
+
+th, td 
+{
+  padding: .65rem;
+  border: 1px solid #cbd1d9;
+  text-align: left;
+  vertical-align: top;
+}
+
+th 
+{
+  color: #fff;
+  background: var(--club);
+}
+
+audio 
+{
+  width: min(100%, 480px);
+}
+
+.media-note 
+{
+  color: #59616c;
+  font-size: .92rem;
+}
+
+.feedback-form 
+{
+  display: grid;
+  gap: .9rem;
+}
+
+.feedback-form label,
+.feedback-form legend 
+{
+  font-weight: bold;
+}
+
+.feedback-form input,
+.feedback-form select,
+.feedback-form textarea 
+{
+  width: 100%;
+  max-width: 600px;
+  padding: .6rem;
+  border: 1px solid #9da6b2;
+  border-radius: 4px;
+  font: inherit;
+}
+
+.feedback-form fieldset 
+{
+  max-width: 600px;
+  border: 1px solid #9da6b2;
+  border-radius: 4px;
+  color: darkblue;
+}
+
+.feedback-form .radio-row 
+{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: .5rem;
+  vertical-align: middle;
+}
+
+.feedback-form .radio-row label 
+{
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+.feedback-form .radio-row input 
+{
+  width: auto;
+  vertical-align: middle;
+}
+
+.feedback-form td
+{
+  border: none;
+  color: black;
+  vertical-align: middle;
+
+}
+
+.form-buttons 
+{
+  display: flex;
+  flex-wrap: wrap;
+  gap: .7rem;
+}
+
+button 
+{
+  padding: .65rem 1rem;
+  color: #fff;
+  background: var(--club);
+  border: 0;
+  border-radius: 4px;
+  font: inherit;
+  cursor: pointer;
+}
+
+button[type="reset"] 
+{
+  color: #20242b;
+  background: #e2e5e9;
+}
+
+.site-footer 
+{
+  margin-top: 2.5rem;
+  padding: 1rem;
+  color: #fff;
+  background: var(--club);
+  text-align: center;
+}
+
+.site-footer a 
+{
+  color: #fff;
+}
+
+@media (max-width: 650px) {
+  .team-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .team-hero img 
+{
+    height: 150px;
+  }
+}
+
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 5px;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label 
+{
+    font-size: 35px;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.rating label:hover,
+.rating label:hover ~ label,
+.rating input:checked ~ label 
+{
+    color: gold;
+}
+
+.team-logo 
+{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.datenaiss
+{
+  color: darkblue;
+}
